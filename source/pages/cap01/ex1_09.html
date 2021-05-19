@@ -12,12 +12,21 @@
 			Elaborar um programa que leia o valor de um jantar.
 			Calcule e informe o valor da taxa do garçom (10%) e o valor total a ser pago.
 
-					- Entrada de dados: ler dois números.
-					- Processamento: calcular a soma.
-					- Saída: informar a soma.
-			*/
+					- Entrada de dados: Ler o valor de um jantar.
+					- Processamento: Calcular e informar o valor dos 10%.
+					- Saída: valor total a ser pago.
+		*/
 
 
+		let valorJantar = Number(prompt("O valor do jantar é: "));
+		let taxa = 0.10; // taxa do garçon, 10%.
+
+		let total = valorJantar + (valorJantar * taxa);
+
+		alert("Taxa do garçom R$" + taxa.toFixed(2) + "\nValor total é de R$" + total.toFixed(2));
+
+
+		// Uso do 'toFixed' foi usado para determinar o número de casas decimais das respostas. No caso foram duas casas, nesse exemplo.
 
 	</script>
 </body>
