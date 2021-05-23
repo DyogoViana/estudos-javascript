@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1_11A</title>
+</head>
+<body>
+	<script>
+		/*
+			Elaborar um programa que leia um número.
+			Calcule e informe os seu vizinho, ou seja, o número anterior e posterior.
+
+			exemplo:
+
+			Número :15
+			Vizinhos: 14 e 16.
+
+					- Entrada de dados: ler um número, exemplo 15.
+					- Processamento: calcular e informar o vizinho. Exemplo: 14 e 16.
+					- Saída: ????
+		*/
+
+		let numeroEscolhido = Number(prompt('Escolha um número: '));
+
+		let numeroAnterior = numeroEscolhido - 1;
+		let numeroPosterior = numeroEscolhido + 1;
+
+		alert("Já que seu númeor escolhido foi o " + numeroEscolhido + ".\n" + "Seus vizinhos são: " + numeroAnterior + " e " + numeroPosterior);
+
+	</script>
+</body>
+</html>
