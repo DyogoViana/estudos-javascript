@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1_11B</title>
+</head>
+<body>
+	<script>
+		/*
+			Elaborar um programa para uma pizzaria, o qual o valor total
+			de uma conta e quantos clientes vão paga-la.
+
+			Calcule e informe o valor a ser pago por cliente.
+			exemplo:
+
+			Valor da conta R$: 90.00
+			Número de clientes: 3
+			Valor por cliente R$: 30.00
+
+				- Entrada de dados: Informar o valor total da compra.
+				- Processamento: Calcular o valor a ser pago pelo cliente.
+				- Saída: Valor pago pelo cliente.
+		*/
+
+		let valorCompra = Number(prompt("Oi, qual o valor do pedido?"));
+		let quantidadeClientes = Number(prompt("Massa. Divido para quantos a conta?"));
+
+		let divisaoConta = valorCompra / quantidadeClientes;
+
+		alert("O valor total foi de R$" + valorCompra + ". " + "\nDividido por " + quantidadeClientes + ", " + "fica R$" + divisaoConta + " para cada.");
+
+		alert("Obrigado pela preferência na compra =) \n");
+
+	</script>
+</body>
+</html>
