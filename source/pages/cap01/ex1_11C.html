@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1_11C</title>
+</head>
+<body>
+	<script>
+		/*
+			Elaborar um programa para uma loja, o qual leia o preço de um produto
+			e informe as opções de pagamento da loja.
+
+			Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x.
+
+			Exemplo:
+			Preço R$: 60
+			À vista R$: 54
+			Ou 3x R$: 20
+
+				- Entrada de dados: Ler o valor do produto.
+				- Processamento: calcular o valor à vista com 10% de desconto e o valor em 3x.
+				- Saída: informar o valor do pagamento à vista com 10% de desconto e o valor em 3x.
+		*/
+
+		let valorProduto = Number(prompt("Qual o valor do produto escolhido?"));
+		let valorDesconto = valorProduto - (valorProduto * 0.10);
+		let valorParcelado = valorProduto / 3;
+
+		alert(
+			"Valor do produto: R$" + valorProduto +
+			"\nValor do produto com desconto de 10%: R$" + valorDesconto.toFixed(2) +
+			"\nvalor parcelado do produto: R$" + valorParcelado.toFixed(2)
+		);
+
+	</script>
+</body>
+</html>
