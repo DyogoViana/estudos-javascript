@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1_11D</title>
+</head>
+<body>
+	<script>
+		/*
+			Elaborar um programa que leia 2 notas de uma aluno em uma disciplina.
+			Calcule e informe as médias das notas.
+
+			Exemplo:
+			Primeira nota: 7.0
+			Segunda nota: 8.0
+			Média: 7.5
+
+
+				- Entrada de dados: Ler duas notas.
+				- Processamento: Calcular a média
+				- Saída: Informar a média.
+		*/
+
+		let nomeAluno = prompt("Insira o nome do aluno: ");
+		let quantidadeNotas = Number(prompt("Indique aqui, a quantidade de matérias do aluno."));
+		let primeiraNota = Number(prompt("Primeira nota: "));
+		let segundaNota = Number(prompt("Segunda nota: "));
+
+
+		let media = (primeiraNota + segundaNota) / quantidadeNotas;
+
+		alert(
+			"O aluno(a) " + nomeAluno + " obteve a média de " + media.toFixed(1) + " em " + quantidadeNotas + " matérias."
+		);
+
+	</script>
+</body>
+</html>
