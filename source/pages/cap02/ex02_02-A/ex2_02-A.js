@@ -25,7 +25,7 @@ function converterDuracao() {
 	// Obtem o resto da divisão entre os números.
 	const minutos = duracao % 60;
 
-	// Altera o conteúdo dis parágrafos de resposta.
+	// Altera o conteúdo dos parágrafos de resposta.
 	outTitulo.textContent = titulo;
 	outResposta.textContent = horas + " horas(s) e " + minutos + " minuto(s).";
 }
