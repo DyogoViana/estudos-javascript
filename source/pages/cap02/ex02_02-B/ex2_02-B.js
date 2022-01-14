@@ -20,7 +20,7 @@ function verPromocao() {
 	const parcelas = promocao / 12;
 
 	outVeiculo.textContent = "Promoção: " + veiculo;
-	outResposta.textContent = "Entrada de R$: " + promocao + " + 12x  de R$ " + parcelas;
+	outResposta.textContent = "Entrada de R$: " + promocao.toFixed(2) + " + 12x  de R$ " + parcelas.toFixed(2);
 }
 
 const btnVerPromocao = document.getElementById("btnVerPromocao");
