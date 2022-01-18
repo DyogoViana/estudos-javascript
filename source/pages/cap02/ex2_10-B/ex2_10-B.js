@@ -11,11 +11,6 @@
 	extras de 15 minutos, devem ser cobradas de forma integral.
 
 	:::::::   valor: 2; Tempo 35; resultado: 6 reais a pagar  :::::::
-
-	valor de 15' = 2 reais
-	(15' + 15') + 5 = 35
-	35' - 5' = 6 reais
-
 */
 
 function calcularTempoDeUso() {
@@ -33,5 +28,6 @@ function calcularTempoDeUso() {
 	outValorPagar.textContent = "O valor total a pagar é de " + valorSerPagoCliente.toFixed(2) + " reais."
 }
 
-const calcularValorTotal = document.getElementById("calcularValorTotal");
-calcularValorTotal.addEventListener("click", calcularTempoDeUso);
+// Botão
+const btnCalcularValorTotal = document.getElementById("btnCalcularValorTotal");
+btnCalcularValorTotal.addEventListener("click", calcularTempoDeUso);
