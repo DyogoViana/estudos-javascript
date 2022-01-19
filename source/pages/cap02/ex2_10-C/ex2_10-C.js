@@ -23,8 +23,8 @@ function mostrarPromocao() {
 	const produto = inProduto.value;
 	const preco = Number(inPreco.value);
 
-	const promocaoTresItens = (preco * 2) + (preco / 2);
 	const itemPromocao = preco / 2;
+	const promocaoTresItens = (preco * 2) + itemPromocao;
 
 	outResultadoPromocao.textContent = produto + " - Promoção: Leve 3 por apenas R$: " + promocaoTresItens.toFixed(2);
 	outValorTerceiroItem.textContent = "O terceiro produto custa apenas R$: " + itemPromocao.toFixed(2);
