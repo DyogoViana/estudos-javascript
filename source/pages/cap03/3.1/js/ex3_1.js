@@ -20,6 +20,9 @@ function calcularMedia() {
 	if (mediaNota >= 7) {
 		outSituacao.textContent = "Parabéns " + nomeAluno + "! Você foi aprovado(a).";
 		outSituacao.style.color = "cyan";
+	} else if (mediaNota >= 4) {
+		outSituacao.textContent = "ATENÇÂO " + nomeAluno + ". Você está em exame";
+		outSituacao.style.color = "lemon";
 	} else {
 		outSituacao.textContent = "Ooops " + nomeAluno + "... Você foi reprovado(a).";
 		outSituacao.style.color = "tomato";
