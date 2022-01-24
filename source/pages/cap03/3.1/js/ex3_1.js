@@ -24,7 +24,7 @@ function calcularMedia() {
 		outSituacao.textContent = "ATENÇÂO " + nomeAluno + ". Você está em exame";
 		outSituacao.style.color = "lemon";
 	} else {
-		outSituacao.textContent = "Ooops " + nomeAluno + "... Você foi reprovado(a).";
+		outSituacao.textContent = 	
 		outSituacao.style.color = "tomato";
 	}
 }
