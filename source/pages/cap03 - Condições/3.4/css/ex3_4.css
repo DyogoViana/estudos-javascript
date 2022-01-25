@@ -1,0 +1,58 @@
+body {
+	font-family: sans-serif;
+	color: thistle;
+	background-color: #7C5E99;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+
+h1, p {
+	margin-bottom: 1.4em;
+}
+
+h1 {
+	font-size: 1.3rem;
+	color: thistle;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+h3 {
+	margin-top: .5em;
+	color: violet;
+}
+
+input {
+	width: 90%;
+	margin-top: .7em;
+}
+
+#btnResultadoMediaNotaAluno {
+	width: 27%;
+	margin: 2em 0;
+	padding: 1em;
+	font-size: 1rem;
+	color: #1e1e1e;
+	background-color: thistle;
+}
+
+#btnResultadoMediaNotaAluno:hover {
+	cursor: pointer;
+	background-color: violet;
+}
+
+.box {
+	width: 22vw;
+	height: 45vh;
+	border: 5px solid #fff;
+	background-color: #1e1e1e;
+	box-shadow: 10px 10px 0 #000000;
+	padding: 2em;
+}
