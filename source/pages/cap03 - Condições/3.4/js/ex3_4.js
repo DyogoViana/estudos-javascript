@@ -7,7 +7,7 @@
 	- Elaborar um programa que leia a hora no Brasil e informe a hora na França.
 */
 
-function fusoHorario() {
+function calcularFusoHorario() {
 	let inHoraBrasil = document.getElementById("inHoraBrasil");
 	let outResultadoFuso = document.getElementById("outResultadoFuso");
 
@@ -26,9 +26,9 @@ function fusoHorario() {
 		horaFranca = horaFranca - 24;
 	}
 
-	outResultadoFuso.textContent = "Hora na França: " + horaFranca.toFixed(2);
+	outResultadoFuso.textContent = "Hora na França: " + horaFranca.toFixed(2) + "h.";
 }
 
 const exibirHoraFranca = document.getElementById("exibirHoraFranca");
-exibirHoraFranca.addEventListener("click", fusoHorario);
+exibirHoraFranca.addEventListener("click", calcularFusoHorario);
 
