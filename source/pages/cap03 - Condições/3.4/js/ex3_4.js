@@ -16,7 +16,7 @@ function calcularFusoHorario() {
 	if (inHoraBrasil.value == "" || isNaN(horaBrasil)) {
 		alert("Por favor, informe a hora do Brasil corretamente.");
 		inHoraBrasil.focus();
-		return;
+		return; 
 	}
 
 	let horaFranca = horaBrasil + 4;
