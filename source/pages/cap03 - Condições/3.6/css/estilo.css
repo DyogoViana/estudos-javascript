@@ -26,6 +26,11 @@ h3 {
 	color: violet;
 }
 
+h4 {
+	color: #7C5E99;
+	margin: 0;
+}
+
 hr {
 	border: 1px solid #2b2b2b;
 }
