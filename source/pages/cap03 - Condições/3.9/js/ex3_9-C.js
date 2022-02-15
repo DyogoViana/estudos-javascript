@@ -23,7 +23,6 @@
 
 function calcularParquimetro() {
 	let inValor = document.getElementById("inValor");
-
 	let outTempo = document.getElementById("outTempo");
 	let outTroco = document.getElementById("outTroco");
 
