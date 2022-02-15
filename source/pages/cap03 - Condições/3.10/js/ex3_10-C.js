@@ -19,27 +19,27 @@ function verificarLadosTriangulo() {
 	let outConfirmacao = document.getElementById("outConfirmacao");
 	let outTipoTriangulo = document.getElementById("outTipoTriangulo");
 
-	ladoA = Number(inLadoA.value);
-	ladoB = Number(inLadoB.value);
-	ladoC = Number(inLadoC.value);
+	let ladoA = Number(inLadoA.value);
+	let ladoB = Number(inLadoB.value);
+	let ladoC = Number(inLadoC.value);
 
-	if (ladoA == 0 || ladoB == 0 || ladoC == 0 || isNaN(ladoA) || isNaN(ladoB) || isNaN(ladoC)) {
-		alert("Por favor, escolha um valor numérico válido.")
-		inLadoA.focus();
-		return;
-	}
+	// if (ladoA == 0 || ladoB == 0 || ladoC == 0 || isNaN(ladoA) || isNaN(ladoB) || isNaN(ladoC)) {
+	// 	alert("Informe lados válidos para o triângulo");
+	// 	inLadoA.focus();
+	// 	return;
+	// }
 
 
 	if (ladoA > ladoB + ladoC || ladoB > ladoA + ladoC || ladoC > ladoA + ladoB) {
-		outConfirmacao.textContent = "Não é um triângulo."
+		outConfirmacao.textContent = "Lados não podem formar um triângulo";
 	} else {
-		outConfirmacao.textContent = "Lados podem formar um triângulo."
+		outConfirmacao.textContent = "Lados podem formar um triângulo";
 		if (ladoA == ladoB && ladoA == ladoC) {
-			outTipoTriangulo.textContent = "Triângulo Equilátero.";
-		} else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC ) {
-			outTipoTriangulo.textContent = "Triângulo Isósceles.";
+			outTipoTriangulo.textContent = "Tipo: Equilátero";
+		} else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
+			outTipoTriangulo.textContent = "Tipo: Isósceles";
 		} else {
-			outTipoTriangulo.textContent = "Triângulo Escaleno."
+			outTipoTriangulo.textContent = "Tipo: Escaleno";
 		}
 	}
 }
