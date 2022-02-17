@@ -9,7 +9,7 @@ function mostrarTabuada() {
 	let numero = Number(inNumero.value);
 
 	if (numero == 0 || isNaN(numero)) {
-		alert("Por favor, insira um número interio real.");
+		alert("Por favor, preencha com um valor numérico inteiro e real.");
 		inNumero.focus();
 		return;
 	}
@@ -25,8 +25,7 @@ function mostrarTabuada() {
 	// O conteúdo da tag 'pre' é alterado para exibir a tabuada do num.
 	outResultado.textContent = resposta;
 
- }
+}
 
- const btnMostrarTabuada = document.getElementById("btnMostrarTabuada");
- btnMostrarTabuada.addEventListener("click", mostrarTabuada);
-
+const btnMostrarTabuada = document.getElementById("btnMostrarTabuada");
+btnMostrarTabuada.addEventListener("click", mostrarTabuada);
