@@ -1,6 +1,4 @@
-/*
-	# Programa Números Decrescente.
-*/
+//	# Programa Números Decrescente.
 
 function decrescerNumero() {
 	let inNumero = document.getElementById("inNumero");
@@ -19,9 +17,8 @@ function decrescerNumero() {
 	for (var i = numero; i > 1; i--) {
 		resposta = resposta + i + ", ";
 	}
+
 	resposta = resposta + i + ".";
-
-
 	outResposta.textContent = resposta;
 }
 
