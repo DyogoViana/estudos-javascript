@@ -12,23 +12,23 @@ function verificarPrimo() {
 		return;
 	}
 
-	let numerosDivisores = 0; // Declara e inicializa contador.
+	// Declara e inicializa a variável tipo flag.
+	let temDivisor = 0;
 
-	// Pecorre todos os possíveis divisores do número.
-	for (let count = 1; count <= numero; count++) {
-		// Verifica se 'count' (1, 2, 3...) é um divisor do 'numero'.
-		if (numero % count == 0) {
-			numerosDivisores++; // Se é, incrementa contador.
+	// Pecorre as possíveis divisões do 'numero'.
+	for (let i = 2; i <= numero / 2; i++) {
+		if (numero % i == 0) {
+			temDivisor = 1; // muda o flag.
+			break;
 		}
 	}
 
-	// Se possui apenas 2 divisores, é primo.
-	if (numerosDivisores == 2) {
-		outResposta.textContent = numero + " é um número primo.";
+	// Se 'numero' > 1 e não possui divisor.
+	if (numero > 1 && !temDivisor) {
+		outResposta.textContent = numero + " é primo."
 	} else {
-		outResposta.textContent = numero + " NÃO é um número primo."
+		outResposta.textContent = numero + " não é primo."
 	}
-
 }
 
 const btnVerificarNumeroPrimo = document.getElementById("btnVerificarNumeroPrimo");
