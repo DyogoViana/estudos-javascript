@@ -16,18 +16,18 @@ function mostrarPrevisaoChinchilas() {
 	let chinchilas = Number(inChinchilas.value);
 	let anos = Number(inAnos.value);
 
-	if (chinchilas < 2 || chinchilas == "" || anos == "" || anos == 0 || isNaN(chinchilas || isNaN(anos))) {
-		alert("Por favor, insita um número.");
-		inAnos.focus();
+	if (chinchilas < 2 || chinchilas == "" || chinchilas == 0 || anos == "" || anos == 0 || isNaN(chinchilas) || isNaN(anos)) {
+		alert("Por favor, coloque um vamlor numérico válido.");
+		inChinchilas.focus();
 		return;
 	}
 
 	let emBranco = "";
-	let total = chinchilas;
+	let totalChinchilas = chinchilas;
 
-	for ( let i = 1; i <= anos; i++) {
-		emBranco = emBranco + i + "º Ano: " + total + " Chinchilas\n";
-		total = total * 3;
+	for (let i = 1; i <= anos; i++) {
+		emBranco = emBranco + i + "º Ano: " + totalChinchilas + " Chinchilas\n";
+		totalChinchilas = totalChinchilas * 3;
 	}
 
 	outPrevisao.textContent = emBranco;
