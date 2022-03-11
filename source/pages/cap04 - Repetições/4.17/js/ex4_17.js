@@ -39,11 +39,11 @@ function verificarNumeroPerfeito() {
 	for (let i = 2; i <= numero / 2; i++) {
 		if (numero % i == 0) {
 			divisores = divisores + ", " + i; // vírgula + i (evita última vírgula).
-			// soma = soma + i;
+			soma = soma + i;
 		}
 	}
 
-	// divisores = divisores + " (Soma: " + soma + ")";
+	divisores = divisores + " (Soma: " + soma + ")";
 
 	outDivisores.textContent = divisores;
 
