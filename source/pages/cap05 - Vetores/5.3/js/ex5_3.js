@@ -62,7 +62,7 @@ function jogarNovamente() {
 }
 
 const btnJogarNovamente = document.getElementById("btnJogarNovamente");
-btnJogarNovamente.addEventListener("click", apostarNumeros);
+btnJogarNovamente.addEventListener("click", jogarNovamente);
 
 
 
