@@ -33,8 +33,7 @@ function apostarNumeros() {
 		} else {
 			erros.push(numero); // Adiciona número ao vetor.
 			let numeroErrors = erros.length; // Obtém tamanho do vetor.
-			let numeroTentativas = tentativ
-			as - numeroErrors; // Calcula número de chances.
+			let numeroTentativas = tentativas - numeroErrors; // Calcula número de chances.
 
 			outErros.textContent = numeroErrors + " (" + erros.join(", ") + ")";
 			outTentativas.textContent = numeroTentativas;
@@ -53,6 +52,13 @@ function apostarNumeros() {
 
 	inNumero.value = ""; // limpa o campo inNumero.
 	inNumero.focus();
+}
+
+const btnApostar = document.getElementById("btnApostar");
+btnApostar.addEventListener("click", apostarNumeros);
+
+function jogarNovamente() {
+	location.reload();
 }
 
 const btnJogarNovamente = document.getElementById("btnJogarNovamente");
